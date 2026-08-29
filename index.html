@@ -1,0 +1,98 @@
+<meta charset="utf-8">
+<title>Matheus Luswarghi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+  body{margin:0}
+  p{margin:0}
+
+  :root{
+    --paper:#F4F5F2;
+    --ink:#0F1A16;
+    --ink-2:#3A4842;
+    --muted:#6E7C75;
+    --line:#DCE0DA;
+    --line-strong:#C3CAC2;
+    --accent:#1E6E4C;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#0C1310;
+      --ink:#EAEFEA;
+      --ink-2:#BAC5BE;
+      --muted:#889690;
+      --line:#22302A;
+      --line-strong:#33443C;
+      --accent:#5FD59B;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0C1310;
+    --ink:#EAEFEA;
+    --ink-2:#BAC5BE;
+    --muted:#889690;
+    --line:#22302A;
+    --line-strong:#33443C;
+    --accent:#5FD59B;
+  }
+
+  *{box-sizing:border-box}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Archivo","Helvetica Neue",Arial,sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+  }
+  main{
+    max-width:620px;
+    margin:0 auto;
+    padding:80px 28px;
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+  }
+
+  .eyebrow{
+    font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+    font-size:.72rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--accent);
+  }
+  h1{
+    font-family:"Fraunces","Iowan Old Style",Georgia,serif;
+    font-size:clamp(2.6rem,8vw,4rem);
+    font-weight:700;
+    line-height:.98;
+    letter-spacing:-.025em;
+    margin:0;
+    text-wrap:balance;
+  }
+  .lead{color:var(--ink-2);font-size:1.08rem;max-width:44ch}
+  .lead b{color:var(--ink);font-weight:600}
+
+  .rule{height:1px;background:var(--line-strong);border:0;margin:4px 0 0}
+
+  .foot{
+    font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+    font-size:.7rem;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--muted);
+  }
+</style>
+
+<main>
+  <p class="eyebrow">Copywriter estrategista</p>
+  <h1>Matheus<br>Luswarghi</h1>
+  <p class="lead">Funis de direct response para infoprodutos. Hoje, <b>estrategista de marketing do Teacher Matheus Jerke</b> — o professor de inglês mais seguido do Brasil.</p>
+  <hr class="rule">
+  <p class="foot">luswarghi.com</p>
+</main>
