@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Parceria Maria Golob</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#F4F5F2;
+  --surface:#FFFFFF;
+  --ink:#0F1A16;
+  --ink-2:#3A4842;
+  --muted:#6B7872;
+  --line:#DCE0DA;
+  --line-strong:#C3CAC2;
+  --accent:#1E6E4C;
+  --accent-soft:#E4EFE7;
+  --shadow:0 1px 2px rgba(15,26,22,.05), 0 12px 28px -18px rgba(15,26,22,.28);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0C1310;
+    --surface:#131C18;
+    --ink:#EAEFEA;
+    --ink-2:#BAC5BE;
+    --muted:#8C9993;
+    --line:#22302A;
+    --line-strong:#33443C;
+    --accent:#5FD59B;
+    --accent-soft:#16271F;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 14px 30px -18px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0C1310;
+  --surface:#131C18;
+  --ink:#EAEFEA;
+  --ink-2:#BAC5BE;
+  --muted:#8C9993;
+  --line:#22302A;
+  --line-strong:#33443C;
+  --accent:#5FD59B;
+  --accent-soft:#16271F;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 14px 30px -18px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Archivo","Helvetica Neue",Arial,sans-serif;
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+p,h1,h2,h3,ul,figure{margin:0}
+ul{list-style:none;padding:0}
+.wrap{max-width:940px;margin:0 auto;padding-inline:24px}
+h1,h2,h3{font-family:"Fraunces","Iowan Old Style",Georgia,serif;font-weight:600;text-wrap:balance}
+.eyebrow{
+  font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);
+}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+
+/* hero */
+.hero{padding-block:72px 48px;display:flex;flex-direction:column;gap:22px}
+h1{font-size:clamp(2.5rem,6.4vw,4.1rem);line-height:1;letter-spacing:-.022em;font-weight:700}
+h1 em{font-style:italic;font-weight:500;color:var(--accent)}
+.lead{max-width:60ch;font-size:1.08rem;color:var(--ink-2)}
+.lead strong{color:var(--ink);font-weight:600}
+
+/* sections */
+section{padding-block:52px;border-top:1px solid var(--line)}
+.sec-head{display:flex;flex-direction:column;gap:10px;margin-bottom:30px;max-width:64ch}
+h2{font-size:clamp(1.55rem,3.3vw,2.05rem);letter-spacing:-.015em;line-height:1.14}
+.sec-sub{color:var(--ink-2);font-size:1rem}
+
+/* two fronts */
+.fronts{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.front{
+  background:var(--surface);border:1px solid var(--line-strong);border-radius:6px;
+  box-shadow:var(--shadow);padding:28px 26px 26px;display:flex;flex-direction:column;gap:14px;
+}
+.front .k{font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.front h3{font-size:1.45rem;line-height:1.15}
+.front p{color:var(--ink-2);font-size:.97rem;line-height:1.5}
+.front .model{
+  margin-top:auto;padding-top:16px;border-top:1px solid var(--line);
+  display:flex;flex-direction:column;gap:2px;
+}
+.front .model .v{font-family:"Fraunces",Georgia,serif;font-size:1.6rem;font-weight:600;line-height:1.15;font-variant-numeric:tabular-nums}
+.front .model .h{font-size:.86rem;color:var(--muted)}
+.front ul{display:flex;flex-direction:column;gap:7px}
+.front li{display:grid;grid-template-columns:14px 1fr;gap:9px;font-size:.95rem;line-height:1.45;color:var(--ink-2)}
+.front li::before{content:"";width:7px;height:7px;margin-top:.55em;background:var(--accent);border-radius:2px}
+
+/* scope blocks */
+.blocks{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.block{padding-block:24px 26px;border-top:1px solid var(--line-strong);display:flex;flex-direction:column;gap:12px}
+.block h3{font-size:1.22rem;line-height:1.2}
+.block ul{display:flex;flex-direction:column;gap:6px}
+.block li{display:grid;grid-template-columns:14px 1fr;gap:9px;font-size:.96rem;line-height:1.45;color:var(--ink-2)}
+.block li::before{content:"";width:10px;height:1px;margin-top:.8em;background:var(--line-strong)}
+.proof{
+  margin-top:4px;padding:11px 14px;background:var(--accent-soft);border-radius:4px;
+  font-size:.88rem;line-height:1.45;color:var(--ink-2);
+}
+.proof b{display:block;font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:3px}
+.closing{
+  margin-top:28px;font-family:"Fraunces",Georgia,serif;font-size:1.2rem;font-weight:500;line-height:1.35;max-width:48ch;
+}
+
+/* results */
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.shot{display:flex;flex-direction:column;gap:8px;min-width:0}
+.shot .tag{font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.shot .frame{border:1px solid var(--line-strong);border-radius:5px;overflow:hidden;background:#111;line-height:0}
+.shot img{display:block;width:100%;height:auto}
+
+/* campaigns */
+.campaigns{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.camp{
+  background:var(--surface);border:1px solid var(--line-strong);border-radius:6px;
+  box-shadow:var(--shadow);padding:26px 26px 22px;display:flex;flex-direction:column;gap:18px;
+}
+.camp-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.camp-head h3{font-size:1.3rem;line-height:1.2}
+.camp .when{font-size:.72rem;letter-spacing:.08em;color:var(--muted)}
+.roas{display:flex;align-items:baseline;gap:12px}
+.roas .rv{font-family:"Fraunces",Georgia,serif;font-size:clamp(3rem,8vw,4.2rem);font-weight:700;line-height:.9;letter-spacing:-.03em;color:var(--accent);font-variant-numeric:tabular-nums}
+.roas .rl{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.kv{margin:0;display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.kv div{display:flex;justify-content:space-between;gap:12px;padding-block:9px;border-bottom:1px solid var(--line)}
+.kv dt{color:var(--ink-2);font-size:.93rem}
+.kv dd{margin:0;font-weight:600;font-variant-numeric:tabular-nums}
+.note{margin-top:14px;font-size:.84rem;color:var(--muted)}
+.sheets{display:flex;flex-direction:column;gap:14px}
+.sheet{display:flex;flex-direction:column;gap:6px}
+.sheet-frame{border:1px solid var(--line-strong);border-radius:4px;overflow:hidden;background:#fff;line-height:0}
+.sheet-frame img{display:block;width:100%;height:auto}
+.sheet figcaption{font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+/* top ads */
+.ads-head{margin-top:44px;margin-bottom:20px;display:flex;flex-direction:column;gap:8px;max-width:64ch}
+.ads-head h3{font-size:1.35rem;line-height:1.2}
+.ads{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ads.four{grid-template-columns:repeat(4,1fr);gap:12px}
+.media{aspect-ratio:4/5;max-width:100%;background:#0b0f0d;border-radius:4px;overflow:hidden;margin-bottom:8px}
+.media video,.media img{display:block;width:100%;height:100%;object-fit:contain}
+.ad{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px 18px 12px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.ad-name{font-weight:500;font-size:.74rem;line-height:1.4;overflow-wrap:anywhere;color:var(--ink)}
+.ad-tag{font-size:.8rem;color:var(--muted)}
+.ad-main{display:flex;align-items:baseline;gap:8px;margin-block:8px 4px}
+.ad-main .av{font-family:"Fraunces",Georgia,serif;font-size:2.2rem;font-weight:700;line-height:1;color:var(--accent);font-variant-numeric:tabular-nums}
+.ad-main .al{font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.ad .kv dt{font-size:.85rem}
+.ad .kv dd{font-size:.9rem}
+.insight{margin-top:20px;padding:14px 16px;background:var(--accent-soft);border-radius:4px;font-size:.95rem;line-height:1.5;color:var(--ink-2);max-width:72ch}
+.insight strong{color:var(--ink);font-weight:600}
+
+/* rules */
+.rules{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.rule{padding-block:18px 20px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:5px}
+.rule h3{font-family:"Archivo",sans-serif;font-size:1rem;font-weight:600}
+.rule p{font-size:.95rem;color:var(--ink-2);line-height:1.5}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--line-strong)}
+.step{padding:20px 22px 6px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.step:first-child{border-left:0;padding-left:0}
+.step .n{font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.step h3{font-size:1.1rem;line-height:1.2}
+.step p{font-size:.93rem;color:var(--ink-2);line-height:1.45}
+
+footer{padding-block:40px 56px;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem}
+
+@media (max-width:960px){
+  .ads.four{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .fronts,.blocks,.rules,.campaigns{grid-template-columns:1fr}
+  .shots{grid-template-columns:1fr 1fr}
+  .ads,.ads.four{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .step{border-left:0;padding-left:0;border-top:1px solid var(--line)}
+  .step:first-child{border-top:0}
+  .hero{padding-block:48px 36px}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header class="hero">
+    <p class="eyebrow">Proposta de parceria · Maria Golob × Matheus Luswarghi</p>
+    <h1>O marketing dos seus infoprodutos, <em>inteiro</em>.</h1>
+    <p class="lead">O funil de VSL que a gente combinou continua exatamente como está. Esta proposta acrescenta uma segunda frente: eu assumir <strong>toda a estratégia de marketing dos seus infoprodutos</strong>, do anúncio ao dashboard. Você cuida do conteúdo, das aulas e das alunas. O resto fica comigo.</p>
+  </header>
+
+  <section>
+    <div class="sec-head">
+      <p class="eyebrow">A proposta</p>
+      <h2>Duas frentes, dois modelos</h2>
+      <p class="sec-sub">O que a gente cria junto vira sociedade. O que é trabalho de estrategista no dia a dia do negócio tem um fixo.</p>
+    </div>
+    <div class="fronts">
+      <article class="front">
+        <p class="k">Frente 1 · já combinada</p>
+        <h3>Sociedade no funil de VSL</h3>
+        <p>O funil perpétuo do Inglês Express e tudo o que nasce dele.</p>
+        <ul>
+          <li>Oferta, promessa e VSL</li>
+          <li>Roteiros dos anúncios e estratégia de tráfego do funil</li>
+          <li>Order bump e upsell (conversação em grupo)</li>
+          <li>Webinário de ascensão para o Unlock Your English</li>
+          <li>Webinário de recuperação para quem não comprou</li>
+          <li>E-mails e WhatsApp do funil</li>
+        </ul>
+        <div class="model">
+          <span class="v">50% · 50%</span>
+          <span class="h">da receita e do investimento em tráfego</span>
+        </div>
+      </article>
+      <article class="front">
+        <p class="k">Frente 2 · nova</p>
+        <h3>Estrategista de marketing completo</h3>
+        <p>Tudo que é marketing dos seus infoprodutos fora do funil de VSL: campanhas, estrutura, dados e páginas.</p>
+        <ul>
+          <li>Black Friday, Ano Novo e toda campanha sazonal</li>
+          <li>Lançamentos, quando fizer sentido</li>
+          <li>YouTube e atração para o perfil</li>
+          <li>Rastreamento, banco de dados e dashboard</li>
+          <li>E-mail marketing e automação de WhatsApp</li>
+          <li>Todas as páginas</li>
+        </ul>
+        <div class="model">
+          <span class="v">Fixo mensal</span>
+          <span class="h">valor a alinhar na nossa conversa</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <p class="eyebrow">Escopo</p>
+      <h2>Tudo o que eu faria dentro do seu negócio</h2>
+      <p class="sec-sub">Não é para implantar tudo de uma vez. É o tamanho da função. A ordem a gente decide junto, pelo que dá resultado primeiro.</p>
+    </div>
+
+    <div class="blocks">
+      <div class="block">
+        <h3>Oferta e produtos</h3>
+        <ul>
+          <li>Posicionamento e promessa de cada produto</li>
+          <li>Estrutura da esteira: entrada, Unlock Your English, mentorias</li>
+          <li>Conversação em grupo com seus professores como produto</li>
+          <li>Order bump, upsell e downsell</li>
+          <li>Desenho de novos produtos</li>
+        </ul>
+        <p class="proof"><b>Já faço hoje</b>Criei do zero um produto de entrada do nicho de inglês (ideia central, mecanismo, oferta) e os upsells de conversação que vendem depois dele.</p>
+      </div>
+
+      <div class="block">
+        <h3>Funis e campanhas</h3>
+        <ul>
+          <li>Funil de VSL perpétuo</li>
+          <li>Webinários de ascensão e de recuperação</li>
+          <li>Black Friday, Ano Novo e calendário de sazonais</li>
+          <li>Lançamento gratuito ou pago (workshop com ingresso)</li>
+          <li>Pré-matrícula e lista de espera</li>
+          <li>Lives semanais no YouTube com grupo de WhatsApp</li>
+        </ul>
+        <p class="proof"><b>Já faço hoje</b>Funil de VSL perpétuo, webinário gravado de ascensão, workshop pago, lançamento gratuito, Black Friday e oferta de Ano Novo.</p>
+      </div>
+
+      <div class="block">
+        <h3>Anúncios e criativos</h3>
+        <ul>
+          <li>Estratégia de tráfego e verba por funil</li>
+          <li>Levas de roteiros de criativos, com testes contínuos</li>
+          <li>Padrão de nomes e acervo do que funcionou</li>
+          <li>Direção de gravação e edição</li>
+          <li>Alinhamento semanal com o gestor de tráfego</li>
+        </ul>
+        <p class="proof"><b>Já faço hoje</b>Levas de criativos roteirizadas e nomeadas em padrão único, com análise dos campeões para montar a próxima.</p>
+      </div>
+
+      <div class="block">
+        <h3>Páginas e copy</h3>
+        <ul>
+          <li>Páginas de captura, vendas, obrigado, upsell e webinário</li>
+          <li>Checkout otimizado</li>
+          <li>Sequências de e-mail e de WhatsApp</li>
+          <li>Roteiros de VSL e de webinário</li>
+        </ul>
+        <p class="proof"><b>Já faço hoje</b>Só a Black Friday de 2025 teve 32 e-mails; a oferta de Ano Novo, 47. Sem contar páginas e roteiros.</p>
+      </div>
+
+      <div class="block">
+        <h3>Perfil e YouTube</h3>
+        <ul>
+          <li>Funil de atração: seguidor novo → conteúdo → produto de entrada</li>
+          <li>Bio, destaques e link na bio rastreado</li>
+          <li>Leitura de dados: formatos e temas que mais engajam e vendem</li>
+          <li>Estrutura do YouTube</li>
+        </ul>
+        <p class="proof"><b>Já faço hoje</b>Leio o orgânico e os anúncios de um perfil de 5,2 milhões de seguidores no mesmo nicho que o seu.</p>
+      </div>
+
+      <div class="block">
+        <h3>Dados e automação</h3>
+        <ul>
+          <li>Rastreamento: pixel, API de conversões e UTMs padronizadas</li>
+          <li>Ferramenta de e-mail marketing com automações</li>
+          <li>Integração com a API oficial do WhatsApp</li>
+          <li>Banco de dados único de leads, alunos e vendas</li>
+          <li>Dashboard com todos os funis num lugar só</li>
+        </ul>
+        <p class="proof"><b>Já faço hoje</b>Métricas por funil e por criativo, retenção de VSL e reunião semanal de números para decidir onde colocar verba.</p>
+      </div>
+
+      <div class="block">
+        <h3>Alunas e recompra</h3>
+        <ul>
+          <li>Boas-vindas e ativação de quem compra</li>
+          <li>Coleta constante de depoimentos e cases</li>
+          <li>Redução de reembolso</li>
+          <li>Ofertas para a base de mais de 2 mil alunos</li>
+        </ul>
+        <p class="proof"><b>Já faço hoje</b>Ascensão da base de alunos para a conversação e o curso completo, sem novo custo de anúncio.</p>
+      </div>
+
+      <div class="block">
+        <h3>Gestão</h3>
+        <ul>
+          <li>Calendário anual de campanhas e metas</li>
+          <li>Reunião semanal de métricas</li>
+          <li>Relatório mensal para você</li>
+          <li>Briefing e coordenação de quem executa: edição, design, tráfego</li>
+        </ul>
+        <p class="proof"><b>Já faço hoje</b>Planejamento e entrega de campanhas com time de edição, design, página e tráfego.</p>
+      </div>
+    </div>
+
+    <p class="closing">E qualquer outra coisa de marketing que o seu negócio precisar pelo caminho.</p>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <p class="eyebrow">Resultados</p>
+      <h2>Campanhas em que eu fui o estrategista</h2>
+      <p class="sec-sub">Mesmo nicho que o seu. É esse tipo de campanha que entra na frente 2.</p>
+    </div>
+    <div class="campaigns">
+      <article class="camp">
+        <div class="camp-head">
+          <h3>Black Friday 2025</h3>
+          <span class="when mono">nov – dez 2025</span>
+        </div>
+        <div class="roas"><span class="rv">9,06</span><span class="rl">ROAS geral</span></div>
+        <dl class="kv">
+          <div><dt>Faturamento</dt><dd>R$ 5,12 mi</dd></div>
+          <div><dt>Investimento em anúncios</dt><dd>R$ 564,6 mil</dd></div>
+          <div><dt>Vendas</dt><dd>2.967</dd></div>
+        </dl>
+        <div class="sheets">
+          <figure class="sheet">
+            <figcaption class="mono">Anúncios</figcaption>
+            <div class="sheet-frame"><img src="imagens/bf25-anuncios.png" alt="Print da planilha: valor investido de R$ 564.641,36, 6.259 leads e CPL de R$ 90,21"></div>
+          </figure>
+          <figure class="sheet">
+            <figcaption class="mono">Vendas gerais</figcaption>
+            <div class="sheet-frame"><img src="imagens/bf25-witly.png" alt="Print da planilha: 2.967 vendas gerais, faturamento geral de R$ 5.117.844,59 e ROAS geral de 9,06"></div>
+          </figure>
+        </div>
+      </article>
+      <article class="camp">
+        <div class="camp-head">
+          <h3>Oferta de Ano Novo 2026</h3>
+          <span class="when mono">jan – fev 2026</span>
+        </div>
+        <div class="roas"><span class="rv">4,99</span><span class="rl">ROAS geral</span></div>
+        <dl class="kv">
+          <div><dt>Faturamento</dt><dd>R$ 2,05 mi</dd></div>
+          <div><dt>Investimento em anúncios</dt><dd>R$ 410,2 mil</dd></div>
+          <div><dt>Vendas</dt><dd>931</dd></div>
+        </dl>
+        <div class="sheets">
+          <figure class="sheet">
+            <figcaption class="mono">Anúncios</figcaption>
+            <div class="sheet-frame"><img src="imagens/ofan-anuncios.png" alt="Print da planilha: valor investido de R$ 410.221,91, 15.479 leads e CPL de R$ 26,50"></div>
+          </figure>
+          <figure class="sheet">
+            <figcaption class="mono">Vendas gerais</figcaption>
+            <div class="sheet-frame"><img src="imagens/ofan-witly.png" alt="Print da planilha: 931 compras, faturamento geral de R$ 2.048.200,00 e ROAS geral de 4,99"></div>
+          </figure>
+        </div>
+      </article>
+    </div>
+    <p class="note">ROAS geral = faturamento total da campanha ÷ investimento em anúncios.</p>
+
+    <div class="ads-head">
+      <h3>Criativos campeões</h3>
+      <p class="sec-sub">Criativos que receberam verba e trouxeram venda. Mesmo público que o seu: o que muda de um funil para outro é só a chamada final.</p>
+    </div>
+    <div class="ads">
+      <article class="ad">
+        <div class="media"><video controls playsinline preload="metadata" poster="videos/ID_00150-capa.jpg" src="videos/ID_00150.mp4"></video></div>
+        <p class="ad-name mono">ID_00150_[MW][CDF][DSI_ABRIL26]_vendas_video_orig</p>
+        <p class="ad-tag">Vídeo · soma do original e 4 variações · até ago/2026</p>
+        <div class="ad-main"><span class="av">660</span><span class="al">vendas</span></div>
+        <dl class="kv">
+          <div><dt>Investido</dt><dd>R$ 230 mil</dd></div>
+          <div><dt>Leads</dt><dd>19.426</dd></div>
+          <div><dt>ROAS</dt><dd>3,62</dd></div>
+        </dl>
+      </article>
+      <article class="ad">
+        <div class="media"><video controls playsinline preload="metadata" poster="videos/ID_00142-capa.jpg" src="videos/ID_00142.mp4"></video></div>
+        <p class="ad-name mono">ID_00142_[MW][ALOUD][PM26_COPA]_captacao_video_orig</p>
+        <p class="ad-tag">Vídeo · até ago/2026</p>
+        <div class="ad-main"><span class="av">271</span><span class="al">vendas</span></div>
+        <dl class="kv">
+          <div><dt>Investido</dt><dd>R$ 66,5 mil</dd></div>
+          <div><dt>CPA</dt><dd>R$ 245,52</dd></div>
+          <div><dt>ROAS</dt><dd>5,3</dd></div>
+        </dl>
+      </article>
+      <article class="ad">
+        <div class="media"><img src="videos/ID_00248.jpg" alt="Criativo de imagem ID_00248" loading="lazy"></div>
+        <p class="ad-name mono">ID_00248_[MW][ALOUD][PM26]_captacao_imagem_orig</p>
+        <p class="ad-tag">Imagem · até ago/2026</p>
+        <div class="ad-main"><span class="av">10,3</span><span class="al">ROAS</span></div>
+        <dl class="kv">
+          <div><dt>Vendas</dt><dd>40</dd></div>
+          <div><dt>CPL</dt><dd>R$ 12,23</dd></div>
+          <div><dt>CPA</dt><dd>R$ 127,79</dd></div>
+        </dl>
+      </article>
+      <article class="ad">
+        <div class="media"><video controls playsinline preload="metadata" poster="videos/ID_00159-capa.jpg" src="videos/ID_00159.mp4"></video></div>
+        <p class="ad-name mono">ID_00159_[MW][CDF][DSI_ABRIL26]_vendas_video_orig</p>
+        <p class="ad-tag">Vídeo · 1 a 14 set 2026</p>
+        <div class="ad-main"><span class="av">3,11</span><span class="al">ROAS</span></div>
+        <dl class="kv">
+          <div><dt>Investido</dt><dd>R$ 11,4 mil</dd></div>
+          <div><dt>Vendas</dt><dd>21</dd></div>
+          <div><dt>Qualificação</dt><dd>45,33%</dd></div>
+        </dl>
+      </article>
+      <article class="ad">
+        <div class="media"><img src="videos/ID_00422.jpg" alt="Criativo de imagem ID_00422" loading="lazy"></div>
+        <p class="ad-name mono">ID_00422_[MW][ALOUD][PM26]_captacao_imagem_orig</p>
+        <p class="ad-tag">Imagem · 1 a 14 set 2026</p>
+        <div class="ad-main"><span class="av">8,45</span><span class="al">ROAS</span></div>
+        <dl class="kv">
+          <div><dt>Vendas</dt><dd>12</dd></div>
+          <div><dt>CPL</dt><dd>R$ 10,42</dd></div>
+          <div><dt>CPA</dt><dd>R$ 198,79</dd></div>
+        </dl>
+      </article>
+    </div>
+    <p class="insight">O método por trás: em vez de inventar do zero, variar o gancho e a legenda de quem já venceu. Essas variações tiveram <strong>custo por lead 34% menor</strong> e <strong>ROAS de 37% a 53% maior</strong> que os originais.</p>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <p class="eyebrow">Resultados</p>
+      <h2>O funil de VSL que eu conduzo, últimos 30 dias</h2>
+      <p class="sec-sub">É esse modelo que vai para a frente 1.</p>
+    </div>
+    <div class="shots">
+      <figure class="shot"><span class="tag">ROI 2,18 · ROAS 2,3</span><div class="frame"><img src="imagens/roas.png" alt="Painel com ROI 2,18 e ROAS 2,3"></div></figure>
+      <figure class="shot"><span class="tag">Lucro R$ 63.253,50</span><div class="frame"><img src="imagens/lucro.png" alt="Painel com lucro de R$ 63.253,50"></div></figure>
+      <figure class="shot"><span class="tag">CPA R$ 186,72</span><div class="frame"><img src="imagens/cac.png" alt="Painel com CPA do front de R$ 186,72"></div></figure>
+      <figure class="shot"><span class="tag">340 vendas</span><div class="frame"><img src="imagens/novos-alunos.png" alt="Painel com 340 vendas do front"></div></figure>
+    </div>
+
+    <div class="ads-head">
+      <h3>Criativos campeões do funil de VSL</h3>
+      <p class="sec-sub">Os que mais receberam verba e continuaram vendendo. ROAS com produto de entrada e upsell somados.</p>
+    </div>
+    <div class="ads four">
+      <article class="ad">
+        <div class="media"><video controls playsinline preload="metadata" poster="videos/ID_00015-capa.jpg" src="videos/ID_00015.mp4"></video></div>
+        <p class="ad-name mono">ID_00015_[MW][CDF][INGST]_vendas_video_orig_reg</p>
+        <p class="ad-tag">Vídeo · 1 jul a 14 set 2026</p>
+        <div class="ad-main"><span class="av">3,26</span><span class="al">ROAS</span></div>
+        <dl class="kv">
+          <div><dt>Investido</dt><dd>R$ 6,4 mil</dd></div>
+          <div><dt>Vendas</dt><dd>58</dd></div>
+        </dl>
+      </article>
+      <article class="ad">
+        <div class="media"><video controls playsinline preload="metadata" poster="videos/ID_00104-capa.jpg" src="videos/ID_00104.mp4"></video></div>
+        <p class="ad-name mono">ID_00104_[MW][ALOUD][INGST]_vendas_video_orig</p>
+        <p class="ad-tag">Vídeo · 1 jul a 14 set 2026</p>
+        <div class="ad-main"><span class="av">2,33</span><span class="al">ROAS</span></div>
+        <dl class="kv">
+          <div><dt>Investido</dt><dd>R$ 17,7 mil</dd></div>
+          <div><dt>Vendas</dt><dd>122</dd></div>
+        </dl>
+      </article>
+      <article class="ad">
+        <div class="media"><video controls playsinline preload="metadata" poster="videos/ID_00010-capa.jpg" src="videos/ID_00010.mp4"></video></div>
+        <p class="ad-name mono">ID_00010_[MW][CDF][INGST]_vendas_video_orig</p>
+        <p class="ad-tag">Vídeo · 1 jul a 14 set 2026</p>
+        <div class="ad-main"><span class="av">2,23</span><span class="al">ROAS</span></div>
+        <dl class="kv">
+          <div><dt>Investido</dt><dd>R$ 19,4 mil</dd></div>
+          <div><dt>Vendas</dt><dd>117</dd></div>
+        </dl>
+      </article>
+      <article class="ad">
+        <div class="media"><video controls playsinline preload="metadata" poster="videos/ID_00040-capa.jpg" src="videos/ID_00040.mp4"></video></div>
+        <p class="ad-name mono">ID_00040_[MW][CDF][INGST]_vendas_video_orig_vv</p>
+        <p class="ad-tag">Vídeo · 1 jul a 14 set 2026</p>
+        <div class="ad-main"><span class="av">2,13</span><span class="al">ROAS</span></div>
+        <dl class="kv">
+          <div><dt>Investido</dt><dd>R$ 23,5 mil</dd></div>
+          <div><dt>Vendas</dt><dd>157</dd></div>
+        </dl>
+      </article>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <p class="eyebrow">Combinados</p>
+      <h2>As regras que deixam a sociedade simples</h2>
+    </div>
+    <div class="rules">
+      <div class="rule">
+        <h3>Aluno do funil é do funil</h3>
+        <p>Quem comprou pelo funil de VSL segue na sociedade em qualquer compra futura. Uma nova venda para essa aluna não tem custo de anúncio.</p>
+      </div>
+      <div class="rule">
+        <h3>O que você já tem continua seu</h3>
+        <p>Vendas que não vêm do funil de VSL, incluindo as campanhas da frente 2, ficam 100% com você.</p>
+      </div>
+      <div class="rule">
+        <h3>Fechamento mensal</h3>
+        <p>O tráfego do funil roda no seu cartão. No fim do mês a gente soma receita e gastos e acerta os 50% de cada lado.</p>
+      </div>
+      <div class="rule">
+        <h3>Números abertos</h3>
+        <p>Você mantém acesso direto ao Kiwify e aos anúncios, além do dashboard. Os dois olham para o mesmo número.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <p class="eyebrow">Próximos passos</p>
+      <h2>Do "vamos" ao primeiro resultado</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <span class="n">Primeiro</span>
+        <h3>Alinhar o modelo</h3>
+        <p>Fechar o fixo da frente 2 e os combinados por escrito.</p>
+      </div>
+      <div class="step">
+        <span class="n">Em seguida</span>
+        <h3>Base e prioridades</h3>
+        <p>Rastreamento no lugar e escolha do que entra primeiro: funil de VSL e Black Friday.</p>
+      </div>
+      <div class="step">
+        <span class="n">Depois</span>
+        <h3>Rodar e ajustar</h3>
+        <p>Funis no ar, reunião semanal de números e novas frentes conforme o resultado.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>Matheus Luswarghi · Estratégia de marketing para infoprodutos</footer>
+</div>
+</body>
+</html>
